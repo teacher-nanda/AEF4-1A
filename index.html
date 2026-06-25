@@ -616,7 +616,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
         <div class="q-line"><span class="a-label">A</span><span class="a-text">My Olympic medals.</span></div>
         <div class="q-line"><span class="q-label">Q2</span><span class="q-text">What <input class="ans-input" data-ans="did" style="width:50px"> you want to be when you were growing up?</span></div>
         <div class="q-line"><span class="a-label">A</span><span class="a-text">A nurse.</span></div>
-        <div class="q-line"><span class="q-label">Q3</span><span class="q-text">What <input class="ans-input" data-ans="do" style="width:60px"> you like about yourself?</span></div>
+        <div class="q-line"><span class="q-label">Q3</span><span class="q-text">What <input class="ans-input" data-ans="don't" style="width:80px"> you like about yourself?</span></div>
         <div class="q-line"><span class="a-label">A</span><span class="a-text">I like to have the last word.</span></div>
         <div class="q-line"><span class="q-label">Q4</span><span class="q-text">What <input class="ans-input" data-ans="was" style="width:50px"> your most embarrassing moment?</span></div>
         <div class="q-line"><span class="a-label">A</span><span class="a-text">I was on the podium at the 2014 World Championships in China when a bee appeared out of nowhere and took a liking to my flowers.</span></div>
@@ -664,7 +664,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
         </div>
         <div id="check-row-2" class="ex-row" style="display:flex;align-items:center;gap:12px;padding:6px 8px;border-radius:8px;transition:background .3s;">
           <button id="cb-2" onclick="toggleCheck(2)" class="chk-btn">?</button>
-          <span>likes eating</span>
+          <span>tends to repeat certain expressions</span>
         </div>
         <div id="check-row-3" class="ex-row" style="display:flex;align-items:center;gap:12px;padding:6px 8px;border-radius:8px;transition:background .3s;">
           <button id="cb-3" onclick="toggleCheck(3)" class="chk-btn">?</button>
@@ -672,7 +672,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
         </div>
         <div id="check-row-4" class="ex-row" style="display:flex;align-items:center;gap:12px;padding:6px 8px;border-radius:8px;transition:background .3s;">
           <button id="cb-4" onclick="toggleCheck(4)" class="chk-btn">?</button>
-          <span>would like to have superpowers</span>
+          <span>hopes to inspire people</span>
         </div>
         <div id="check-row-5" class="ex-row" style="display:flex;align-items:center;gap:12px;padding:6px 8px;border-radius:8px;transition:background .3s;">
           <button id="cb-5" onclick="toggleCheck(5)" class="chk-btn">?</button>
@@ -702,7 +702,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
         <div style="font-weight:800;color:#2A6B42;margin-bottom:10px;font-size:.93rem;">📄 Interview – Simone Biles</div>
         <p style="margin:0 0 6px;"><strong>1. What's your most treasured possession?</strong><br>My Olympic medals.</p>
         <p style="margin:0 0 6px;"><strong>2. What did you want to be when you were growing up?</strong><br>A nurse.</p>
-        <p style="margin:0 0 6px;"><strong>3. What do you like about yourself?</strong><br>I like to have the last word.</p>
+        <p style="margin:0 0 6px;"><strong>3. What don't you like about yourself?</strong><br>I like to have the last word.</p>
         <p style="margin:0 0 6px;"><strong>4. What was your most embarrassing moment?</strong><br>I was on the podium at the 2014 World Championships in China when a bee appeared out of nowhere and took a liking to my flowers.</p>
         <p style="margin:0 0 6px;"><strong>5. What or who is the greatest love of your life?</strong><br>Food.</p>
         <p style="margin:0 0 6px;"><strong>6. What would your superpower be?</strong><br>To be a witch. A good witch, of course. It would be cool to control things with my mind and do spells.</p>
@@ -750,7 +750,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
     var qs=[
       "What\'s your most treasured possession?",
       "What did you want to be when you were growing up?",
-      "What don't people know about you?",
+      "What don't you like about yourself?",
       "What was your most embarrassing moment?",
       "What or who is the greatest love of your life?",
       "What would your superpower be?",
@@ -908,22 +908,28 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
       </audio>
     </div>
 
-    <div style="display:flex;flex-direction:column;gap:14px;max-width:640px;margin:0 auto;">
-      <div class="ex-row" style="display:flex;align-items:center;gap:14px;">
-        <span class="ex-num">1</span>
-        <input class="ans-input" data-ans="What brings you to Toronto" style="flex:1;text-align:left;padding:6px 10px;" placeholder="Write the question you heard…">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:860px;margin:0 auto;">
+      <!-- Left: 1 & 2 -->
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="ex-row" style="display:flex;align-items:center;gap:12px;">
+          <span class="ex-num">1</span>
+          <input class="ans-input" data-ans="What brings you to Toronto" style="flex:1;text-align:left;padding:8px 12px;font-size:1.05rem;" placeholder="Write the question you heard…">
+        </div>
+        <div class="ex-row" style="display:flex;align-items:center;gap:12px;">
+          <span class="ex-num">2</span>
+          <input class="ans-input" data-ans="How long are you going to be in Toronto for" style="flex:1;text-align:left;padding:8px 12px;font-size:1.05rem;" placeholder="Write the question you heard…">
+        </div>
       </div>
-      <div class="ex-row" style="display:flex;align-items:center;gap:14px;">
-        <span class="ex-num">2</span>
-        <input class="ans-input" data-ans="How long are you going to be in Toronto for" style="flex:1;text-align:left;padding:6px 10px;" placeholder="Write the question you heard…">
-      </div>
-      <div class="ex-row" style="display:flex;align-items:center;gap:14px;">
-        <span class="ex-num">3</span>
-        <input class="ans-input" data-ans="Don't you like Toronto" style="flex:1;text-align:left;padding:6px 10px;" placeholder="Write the question you heard…">
-      </div>
-      <div class="ex-row" style="display:flex;align-items:center;gap:14px;">
-        <span class="ex-num">4</span>
-        <input class="ans-input" data-ans="Can you tell us if there's any truth in that" style="flex:1;text-align:left;padding:6px 10px;" placeholder="Write the question you heard…">
+      <!-- Right: 3 & 4 -->
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="ex-row" style="display:flex;align-items:center;gap:12px;">
+          <span class="ex-num">3</span>
+          <input class="ans-input" data-ans="Don't you like Toronto" style="flex:1;text-align:left;padding:8px 12px;font-size:1.05rem;" placeholder="Write the question you heard…">
+        </div>
+        <div class="ex-row" style="display:flex;align-items:center;gap:12px;">
+          <span class="ex-num">4</span>
+          <input class="ans-input" data-ans="Can you tell us if there's any truth in that" style="flex:1;text-align:left;padding:8px 12px;font-size:1.05rem;" placeholder="Write the question you heard…">
+        </div>
       </div>
     </div>
 
@@ -942,61 +948,65 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
     <h2>Analyzing</h2>
     <p class="instruction">Click a question from the audio, then click its matching description.</p>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px;align-items:start;">
+    <!-- single grid: each question and its paired description are on the same row -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;align-items:stretch;">
 
-      <!-- LEFT: questions from the audio -->
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div style="font-weight:700;color:#4A1A6A;font-size:.9rem;margin-bottom:2px;letter-spacing:.01em;">Questions from the audio</div>
-        <div class="gm2-sent" id="gm2-s1" data-i="1" onclick="gm2PickSent('1')"
-             style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">1</span>
-          <span style="font-size:.95rem;color:#1C2B3A;flex:1;font-style:italic;">What brings you to Toronto?</span>
-          <span class="gm2-badge" style="font-size:.8rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
-        </div>
-        <div class="gm2-sent" id="gm2-s2" data-i="2" onclick="gm2PickSent('2')"
-             style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">2</span>
-          <span style="font-size:.95rem;color:#1C2B3A;flex:1;font-style:italic;">How long are you going to be in Toronto for?</span>
-          <span class="gm2-badge" style="font-size:.8rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
-        </div>
-        <div class="gm2-sent" id="gm2-s3" data-i="3" onclick="gm2PickSent('3')"
-             style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">3</span>
-          <span style="font-size:.95rem;color:#1C2B3A;flex:1;font-style:italic;">Don't you like Toronto?</span>
-          <span class="gm2-badge" style="font-size:.8rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
-        </div>
-        <div class="gm2-sent" id="gm2-s4" data-i="4" onclick="gm2PickSent('4')"
-             style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">4</span>
-          <span style="font-size:.95rem;color:#1C2B3A;flex:1;font-style:italic;">Can you tell us if there's any truth in that?</span>
-          <span class="gm2-badge" style="font-size:.8rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
-        </div>
+      <!-- headers -->
+      <div style="font-weight:700;color:#4A1A6A;font-size:1rem;letter-spacing:.01em;">Questions from the audio</div>
+      <div style="font-weight:700;color:#4A1A6A;font-size:1rem;letter-spacing:.01em;">Which question is an example of…?</div>
+
+      <!-- row 1 -->
+      <div class="gm2-sent" id="gm2-s1" data-i="1" onclick="gm2PickSent('1')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">1</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;flex:1;font-style:italic;">What brings you to Toronto?</span>
+        <span class="gm2-badge" style="font-size:.95rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
+      </div>
+      <div class="gm2-resp" id="gm2-ra" data-r="a" onclick="gm2PickResp('a')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">a</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;line-height:1.5;">a question that ends with a preposition</span>
       </div>
 
-      <!-- RIGHT: category descriptions (textbook wording) -->
-      <div style="display:flex;flex-direction:column;gap:10px;">
-        <div style="font-weight:700;color:#4A1A6A;font-size:.9rem;margin-bottom:2px;letter-spacing:.01em;">Which question is an example of…?</div>
-        <div class="gm2-resp" id="gm2-ra" data-r="a" onclick="gm2PickResp('a')"
-             style="display:flex;align-items:flex-start;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">a</span>
-          <span style="font-size:.92rem;color:#1C2B3A;line-height:1.5;">a question that ends with a preposition</span>
-        </div>
-        <div class="gm2-resp" id="gm2-rb" data-r="b" onclick="gm2PickResp('b')"
-             style="display:flex;align-items:flex-start;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">b</span>
-          <span style="font-size:.92rem;color:#1C2B3A;line-height:1.5;">a subject question, where there is no auxiliary verb</span>
-        </div>
-        <div class="gm2-resp" id="gm2-rc" data-r="c" onclick="gm2PickResp('c')"
-             style="display:flex;align-items:flex-start;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">c</span>
-          <span style="font-size:.92rem;color:#1C2B3A;line-height:1.5;">a question that uses a negative auxiliary verb</span>
-        </div>
-        <div class="gm2-resp" id="gm2-rd" data-r="d" onclick="gm2PickResp('d')"
-             style="display:flex;align-items:flex-start;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
-          <span style="font-size:.78rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">d</span>
-          <span style="font-size:.92rem;color:#1C2B3A;line-height:1.5;">an indirect question</span>
-        </div>
+      <!-- row 2 -->
+      <div class="gm2-sent" id="gm2-s2" data-i="2" onclick="gm2PickSent('2')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">2</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;flex:1;font-style:italic;">How long are you going to be in Toronto for?</span>
+        <span class="gm2-badge" style="font-size:.95rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
       </div>
+      <div class="gm2-resp" id="gm2-rb" data-r="b" onclick="gm2PickResp('b')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">b</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;line-height:1.5;">a subject question, where there is no auxiliary verb</span>
+      </div>
+
+      <!-- row 3 -->
+      <div class="gm2-sent" id="gm2-s3" data-i="3" onclick="gm2PickSent('3')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">3</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;flex:1;font-style:italic;">Don't you like Toronto?</span>
+        <span class="gm2-badge" style="font-size:.95rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
+      </div>
+      <div class="gm2-resp" id="gm2-rc" data-r="c" onclick="gm2PickResp('c')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">c</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;line-height:1.5;">a question that uses a negative auxiliary verb</span>
+      </div>
+
+      <!-- row 4 -->
+      <div class="gm2-sent" id="gm2-s4" data-i="4" onclick="gm2PickSent('4')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">4</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;flex:1;font-style:italic;">Can you tell us if there's any truth in that?</span>
+        <span class="gm2-badge" style="font-size:.95rem;font-weight:800;min-width:24px;text-align:center;flex-shrink:0;border-radius:6px;padding:2px 7px;"></span>
+      </div>
+      <div class="gm2-resp" id="gm2-rd" data-r="d" onclick="gm2PickResp('d')"
+           style="display:flex;align-items:center;gap:10px;background:#f4f8fa;border:2px solid #c8d8e8;border-radius:10px;padding:11px 14px;cursor:pointer;transition:all .18s;">
+        <span style="font-size:.95rem;font-weight:800;color:#4A1A6A;min-width:18px;flex-shrink:0;">d</span>
+        <span style="font-size:1.05rem;color:#1C2B3A;line-height:1.5;">an indirect question</span>
+      </div>
+
     </div>
 
     <div class="hw-btns" style="margin-top:14px;">
@@ -1014,99 +1024,124 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;">
 
-      <!-- LEFT COLUMN: rules 1-4 -->
+      <!-- LEFT COLUMN: rules 1-4 as independent toggles -->
       <div style="display:flex;flex-direction:column;gap:11px;">
 
         <!-- Rule 1 -->
-        <div style="background:#f3eeff;border-left:5px solid #4A1A6A;border-radius:0 10px 10px 0;padding:10px 14px;">
-          <div style="font-weight:800;color:#4A1A6A;font-size:1rem;margin-bottom:4px;">1 · Auxiliary verb questions</div>
-          <div style="font-size:.93rem;color:#2a1a40;line-height:1.5;">Invert the subject and auxiliary/modal verb. With simple present &amp; past, add <em>do/does</em> or <em>did</em>.</div>
-          <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
-            <span style="background:#4A1A6A;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">How long <strong>have you</strong> been waiting?</span>
-            <span style="background:#4A1A6A;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;"><strong>Should we</strong> buy her a present?</span>
+        <div style="background:#f3eeff;border-left:5px solid #4A1A6A;border-radius:0 10px 10px 0;">
+          <button onclick="s8Toggle('r1')" style="width:100%;background:none;border:none;cursor:pointer;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;text-align:left;">
+            <span style="font-weight:800;color:#4A1A6A;font-size:1rem;">1 · Auxiliary verb questions</span>
+            <span id="s8-btn-r1" style="font-size:.82rem;font-weight:700;color:#4A1A6A;white-space:nowrap;margin-left:8px;">Show ▼</span>
+          </button>
+          <div id="s8-body-r1" style="display:none;padding:0 14px 10px;">
+            <div style="font-size:.93rem;color:#2a1a40;line-height:1.5;">Invert the subject and auxiliary/modal verb. With simple present &amp; past, add <em>do/does</em> or <em>did</em>.</div>
+            <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
+              <span style="background:#4A1A6A;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">How long <strong>have you</strong> been waiting?</span>
+              <span style="background:#4A1A6A;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;"><strong>Should we</strong> buy her a present?</span>
+            </div>
           </div>
         </div>
 
         <!-- Rule 2 -->
-        <div style="background:#fff3f0;border-left:5px solid #C8891E;border-radius:0 10px 10px 0;padding:10px 14px;">
-          <div style="font-weight:800;color:#C8891E;font-size:1rem;margin-bottom:4px;">2 · Negative questions</div>
-          <div style="font-size:.93rem;color:#2a1a40;line-height:1.5;">Used to show surprise or check that something is true.</div>
-          <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
-            <span style="background:#C8891E;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Why <strong>didn't you</strong> like the movie?</span>
-            <span style="background:#C8891E;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;"><strong>Don't you</strong> have to be at school?</span>
+        <div style="background:#fff3f0;border-left:5px solid #C8891E;border-radius:0 10px 10px 0;">
+          <button onclick="s8Toggle('r2')" style="width:100%;background:none;border:none;cursor:pointer;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;text-align:left;">
+            <span style="font-weight:800;color:#C8891E;font-size:1rem;">2 · Negative questions</span>
+            <span id="s8-btn-r2" style="font-size:.82rem;font-weight:700;color:#C8891E;white-space:nowrap;margin-left:8px;">Show ▼</span>
+          </button>
+          <div id="s8-body-r2" style="display:none;padding:0 14px 10px;">
+            <div style="font-size:.93rem;color:#2a1a40;line-height:1.5;">Used to show surprise or check that something is true.</div>
+            <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
+              <span style="background:#C8891E;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Why <strong>didn't you</strong> like the movie?</span>
+              <span style="background:#C8891E;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;"><strong>Don't you</strong> have to be at school?</span>
+            </div>
           </div>
         </div>
 
         <!-- Rule 3 -->
-        <div style="background:#e8f5f0;border-left:5px solid #2A6B42;border-radius:0 10px 10px 0;padding:10px 14px;">
-          <div style="font-weight:800;color:#2A6B42;font-size:1rem;margin-bottom:4px;">3 · Prepositions at the end</div>
-          <div style="font-size:.93rem;color:#1a3040;line-height:1.5;">If a verb needs a preposition, it goes at the <strong>end</strong> of the question — not the beginning.</div>
-          <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
-            <span style="background:#2A6B42;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">What are you thinking <strong>about</strong>?</span>
-            <span style="background:#2A6B42;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Who does this bag belong <strong>to</strong>?</span>
-          </div>
-          <div style="margin-top:6px;">
-            <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">About what are you talking? ✗</span>
+        <div style="background:#e8f5f0;border-left:5px solid #2A6B42;border-radius:0 10px 10px 0;">
+          <button onclick="s8Toggle('r3')" style="width:100%;background:none;border:none;cursor:pointer;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;text-align:left;">
+            <span style="font-weight:800;color:#2A6B42;font-size:1rem;">3 · Prepositions at the end</span>
+            <span id="s8-btn-r3" style="font-size:.82rem;font-weight:700;color:#2A6B42;white-space:nowrap;margin-left:8px;">Show ▼</span>
+          </button>
+          <div id="s8-body-r3" style="display:none;padding:0 14px 10px;">
+            <div style="font-size:.93rem;color:#1a3040;line-height:1.5;">If a verb needs a preposition, it goes at the <strong>end</strong> of the question — not the beginning.</div>
+            <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
+              <span style="background:#2A6B42;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">What are you thinking <strong>about</strong>?</span>
+              <span style="background:#2A6B42;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Who does this bag belong <strong>to</strong>?</span>
+            </div>
+            <div style="margin-top:6px;">
+              <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">About what are you talking? ✗</span>
+            </div>
           </div>
         </div>
 
         <!-- Rule 4 -->
-        <div style="background:#eef4ff;border-left:5px solid #1E4D8C;border-radius:0 10px 10px 0;padding:10px 14px;">
-          <div style="font-weight:800;color:#1E4D8C;font-size:1rem;margin-bottom:4px;">4 · Subject questions</div>
-          <div style="font-size:.93rem;color:#1a3040;line-height:1.5;">When <em>who / what / which</em> is the <strong>subject</strong>, do <strong>not</strong> use <em>do/did</em> — use normal word order.</div>
-          <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
-            <span style="background:#1E4D8C;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;"><strong>Who lives</strong> in that house? ✓</span>
-            <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">Who did live…? ✗</span>
+        <div style="background:#eef4ff;border-left:5px solid #1E4D8C;border-radius:0 10px 10px 0;">
+          <button onclick="s8Toggle('r4')" style="width:100%;background:none;border:none;cursor:pointer;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;text-align:left;">
+            <span style="font-weight:800;color:#1E4D8C;font-size:1rem;">4 · Subject questions</span>
+            <span id="s8-btn-r4" style="font-size:.82rem;font-weight:700;color:#1E4D8C;white-space:nowrap;margin-left:8px;">Show ▼</span>
+          </button>
+          <div id="s8-body-r4" style="display:none;padding:0 14px 10px;">
+            <div style="font-size:.93rem;color:#1a3040;line-height:1.5;">When <em>who / what / which</em> is the <strong>subject</strong>, do <strong>not</strong> use <em>do/did</em> — use normal word order.</div>
+            <div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:5px;">
+              <span style="background:#1E4D8C;color:#fff;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;"><strong>Who lives</strong> in that house? ✓</span>
+              <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">Who did live…? ✗</span>
+            </div>
           </div>
         </div>
 
       </div>
 
-      <!-- RIGHT COLUMN: indirect questions -->
+      <!-- RIGHT COLUMN: indirect questions as a single toggle -->
       <div style="display:flex;flex-direction:column;gap:11px;">
 
-        <div style="background:#1E4D8C;color:#fff;border-radius:12px;padding:12px 16px;">
-          <div style="font-weight:800;font-size:1.05rem;margin-bottom:6px;">💬 Indirect Questions</div>
-          <div style="font-size:.93rem;line-height:1.55;opacity:.95;">Use indirect questions to sound more <strong>polite</strong>. Start with:</div>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:7px;">
-            <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Can / Could you tell me…?</span>
-            <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Do you know…?</span>
-            <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Do you remember…?</span>
-            <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Would you mind telling me…?</span>
-          </div>
-        </div>
+        <div style="background:#1E4D8C;border-radius:12px;">
+          <button onclick="s8Toggle('indirect')" style="width:100%;background:none;border:none;cursor:pointer;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;text-align:left;">
+            <span style="font-weight:800;font-size:1.05rem;color:#fff;">💬 Indirect Questions</span>
+            <span id="s8-btn-indirect" style="font-size:.82rem;font-weight:700;color:rgba(255,255,255,.85);white-space:nowrap;margin-left:8px;">Show ▼</span>
+          </button>
+          <div id="s8-body-indirect" style="display:none;padding:0 16px 12px;color:#fff;">
+            <div style="font-size:.93rem;line-height:1.55;opacity:.95;">Use indirect questions to sound more <strong>polite</strong>. Start with:</div>
+            <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:7px;">
+              <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Can / Could you tell me…?</span>
+              <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Do you know…?</span>
+              <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Do you remember…?</span>
+              <span style="background:rgba(255,255,255,.18);border-radius:5px;padding:2px 8px;font-size:.88rem;font-style:italic;">Would you mind telling me…?</span>
+            </div>
 
-        <div style="background:#f5f0ff;border-radius:10px;padding:11px 14px;font-size:.93rem;line-height:1.6;color:#1a1a2e;">
-          <div style="font-weight:800;color:#4A1A6A;margin-bottom:6px;">⚠️ Key rules for indirect questions</div>
-          <div style="display:flex;flex-direction:column;gap:9px;">
-            <div>✔ Use <strong>subject + verb</strong> order (not inverted):<br>
-              <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;">
-                <span style="background:#e8f5e9;color:#2A6B42;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Could you tell me where <strong>it is</strong>?</span>
-                <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">…where is it? ✗</span>
+            <div style="background:#f5f0ff;border-radius:10px;padding:11px 14px;font-size:.93rem;line-height:1.6;color:#1a1a2e;margin-top:10px;">
+              <div style="font-weight:800;color:#4A1A6A;margin-bottom:6px;">⚠️ Key rules for indirect questions</div>
+              <div style="display:flex;flex-direction:column;gap:9px;">
+                <div>✔ Use <strong>subject + verb</strong> order (not inverted):<br>
+                  <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;">
+                    <span style="background:#e8f5e9;color:#2A6B42;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Could you tell me where <strong>it is</strong>?</span>
+                    <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">…where is it? ✗</span>
+                  </div>
+                </div>
+                <div>✔ No <em>do/did</em> in the second part:<br>
+                  <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;">
+                    <span style="background:#e8f5e9;color:#2A6B42;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Do you know where <strong>he lives</strong>?</span>
+                    <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">…where does he live? ✗</span>
+                  </div>
+                </div>
+                <div>✔ Use <em>if / whether</em> with yes/no questions:<br>
+                  <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;">
+                    <span style="background:#e8f5e9;color:#2A6B42;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Do you know <strong>if</strong> Mark's coming?</span>
+                    <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">Do you know Mark is coming? ✗</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div>✔ No <em>do/did</em> in the second part:<br>
-              <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;">
-                <span style="background:#e8f5e9;color:#2A6B42;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Do you know where <strong>he lives</strong>?</span>
-                <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">…where does he live? ✗</span>
-              </div>
-            </div>
-            <div>✔ Use <em>if / whether</em> with yes/no questions:<br>
-              <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;">
-                <span style="background:#e8f5e9;color:#2A6B42;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;">Do you know <strong>if</strong> Mark's coming?</span>
-                <span style="background:#fddede;color:#c0392b;border-radius:6px;padding:3px 9px;font-size:.88rem;font-style:italic;text-decoration:line-through;">Do you know Mark is coming? ✗</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div style="background:#fff8e8;border:1px solid #e8c87a;border-radius:10px;padding:11px 14px;font-size:.93rem;color:#5a3e00;">
-          <div style="font-weight:800;color:#C8891E;margin-bottom:6px;">💡 Also followed by the word order of indirect questions:</div>
-          <div style="display:flex;flex-direction:column;gap:4px;">
-            <div><strong>I wonder</strong> <em>why they didn't come.</em></div>
-            <div><strong>I'm not sure</strong> <em>what time it starts.</em></div>
-            <div><strong>I can't remember</strong> <em>where I left my phone.</em></div>
-            <div><strong>I'd like to know</strong> <em>what time you're coming home.</em></div>
+            <div style="background:#fff8e8;border:1px solid #e8c87a;border-radius:10px;padding:11px 14px;font-size:.93rem;color:#5a3e00;margin-top:10px;">
+              <div style="font-weight:800;color:#C8891E;margin-bottom:6px;">💡 Also followed by the word order of indirect questions:</div>
+              <div style="display:flex;flex-direction:column;gap:4px;">
+                <div><strong>I wonder</strong> <em>why they didn't come.</em></div>
+                <div><strong>I'm not sure</strong> <em>what time it starts.</em></div>
+                <div><strong>I can't remember</strong> <em>where I left my phone.</em></div>
+                <div><strong>I'd like to know</strong> <em>what time you're coming home.</em></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1148,8 +1183,8 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
         <div class="ex-row" style="display:flex;align-items:flex-start;gap:10px;">
           <span class="ex-num">2</span>
           <div style="flex:1;display:flex;flex-direction:column;gap:6px;">
-            <div class="sc-bank-wrap"><span class="sc-chip" id="sc-w-2-0" data-qid="2" onclick="scBankClick('2-0')">friend</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-1" data-qid="2" onclick="scBankClick('2-1')">known</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-2" data-qid="2" onclick="scBankClick('2-2')">long</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-3" data-qid="2" onclick="scBankClick('2-3')">best</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-4" data-qid="2" onclick="scBankClick('2-4')">have</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-5" data-qid="2" onclick="scBankClick('2-5')">How</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-6" data-qid="2" onclick="scBankClick('2-6')">you</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-7" data-qid="2" onclick="scBankClick('2-7')">your</span></div>
-            <div class="sc-sent" id="sc-sent-2" data-ans="How long have you known your best friend">
+            <div class="sc-bank-wrap"><span class="sc-chip" id="sc-w-2-0" data-qid="2" onclick="scBankClick('2-0')">you</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-1" data-qid="2" onclick="scBankClick('2-1')">yesterday</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-2" data-qid="2" onclick="scBankClick('2-2')">Why</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-3" data-qid="2" onclick="scBankClick('2-3')">come</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-2-4" data-qid="2" onclick="scBankClick('2-4')">didn't</span></div>
+            <div class="sc-sent" id="sc-sent-2" data-ans="Why didn't you come yesterday">
               <span class="sc-placeholder" id="sc-ph-2">click words to build the question</span>
               <span class="sc-sent-q">?</span>
             </div>
@@ -1181,7 +1216,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
           <span class="ex-num">5</span>
           <div style="flex:1;display:flex;flex-direction:column;gap:6px;">
             <div class="sc-bank-wrap"><span class="sc-chip" id="sc-w-5-0" data-qid="5" onclick="scBankClick('5-0')">housework</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-5-1" data-qid="5" onclick="scBankClick('5-1')">family</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-5-2" data-qid="5" onclick="scBankClick('5-2')">in</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-5-3" data-qid="5" onclick="scBankClick('5-3')">Who</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-5-4" data-qid="5" onclick="scBankClick('5-4')">your</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-5-5" data-qid="5" onclick="scBankClick('5-5')">the</span><span class="sc-dot">&nbsp;·&nbsp;</span><span class="sc-chip" id="sc-w-5-6" data-qid="5" onclick="scBankClick('5-6')">does</span></div>
-            <div class="sc-sent" id="sc-sent-5" data-ans="Who does the housework in your family">
+            <div class="sc-sent" id="sc-sent-5" data-ans="Who does the housework in your family" data-alt="Who in your family does the housework">
               <span class="sc-placeholder" id="sc-ph-5">click words to build the question</span>
               <span class="sc-sent-q">?</span>
             </div>
@@ -1218,7 +1253,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
     <!-- Example -->
     <div style="background:#f7f0ff;border-radius:9px;padding:9px 14px;margin-bottom:14px;font-size:1rem;line-height:2;">
       <span style="color:#888;font-size:.88rem;">Example: &nbsp;</span>
-      Where <input class="inline-ans" style="min-width:120px;background:#d4edda;border-bottom-color:#1A7A4A;color:#1A7A4A;font-weight:700;" value="did you go" disabled> on vacation last year?
+      Where <input class="inline-ans" style="min-width:220px;background:#d4edda;border-bottom-color:#1A7A4A;color:#1A7A4A;font-weight:700;" value="did you go" disabled> on vacation last year?
       <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(you / go)</span>
     </div>
 
@@ -1227,31 +1262,31 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">1</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              How often <input class="ans-input inline-ans" data-ans="do you usually exercise" style="min-width:200px;" placeholder="…"> ? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(you / usually exercise)</span>
+              How often <input class="ans-input inline-ans" data-ans="do you usually exercise" style="min-width:220px;" placeholder="…"> ? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(you / usually exercise)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">2</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              Who <input class="ans-input inline-ans" data-ans="wrote" style="min-width:80px;" placeholder="…"> <em>The Great Gatsby</em>? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(write)</span>
+              Who <input class="ans-input inline-ans" data-ans="wrote" style="min-width:220px;" placeholder="…"> <em>The Great Gatsby</em>? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(write)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">3</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              Could you tell me how much <input class="ans-input inline-ans" data-ans="this book costs" style="min-width:160px;" placeholder="…"> ? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(this book / cost)</span>
+              Could you tell me how much <input class="ans-input inline-ans" data-ans="this book costs" style="min-width:220px;" placeholder="…"> ? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(this book / cost)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">4</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              I can't remember where <input class="ans-input inline-ans" data-ans="I parked" style="min-width:100px;" placeholder="…"> my car this morning. <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(I / park)</span>
+              I can't remember where <input class="ans-input inline-ans" data-ans="I parked" style="min-width:220px;" placeholder="…"> my car this morning. <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(I / park)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">5</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              <input class="ans-input inline-ans" data-ans="Did you enjoy" style="min-width:140px;" placeholder="…"> your trip to Paris last weekend? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(you / enjoy)</span>
+              <input class="ans-input inline-ans" data-ans="Did you enjoy" style="min-width:220px;" placeholder="…"> your trip to Paris last weekend? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(you / enjoy)</span>
             </div>
           </div>
       </div>
@@ -1259,31 +1294,31 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">6</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              What kind of work <input class="ans-input inline-ans" data-ans="does your sister do" style="min-width:190px;" placeholder="…"> ? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(your sister / do)</span>
+              What kind of work <input class="ans-input inline-ans" data-ans="does your sister do" style="min-width:220px;" placeholder="…"> ? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(your sister / do)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">7</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              Who <input class="ans-input inline-ans" data-ans="ate" data-alt="has eaten" style="min-width:70px;" placeholder="…"> the last cookie? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(eat)</span>
+              Who <input class="ans-input inline-ans" data-ans="ate" data-alt="has eaten" style="min-width:220px;" placeholder="…"> the last cookie? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(eat)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">8</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              Do you know what time <input class="ans-input inline-ans" data-ans="the swimming pool opens" style="min-width:210px;" placeholder="…"> on Saturdays? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(the swimming pool / open)</span>
+              Do you know what time <input class="ans-input inline-ans" data-ans="the swimming pool opens" style="min-width:220px;" placeholder="…"> on Saturdays? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(the swimming pool / open)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">9</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              Why <input class="ans-input inline-ans" data-ans="didn't your sister like" data-alt="doesn't your sister like" style="min-width:200px;" placeholder="…"> the present you gave her? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(your sister / not like)</span>
+              Why <input class="ans-input inline-ans" data-ans="didn't your sister like" data-alt="doesn't your sister like" style="min-width:220px;" placeholder="…"> the present you gave her? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(your sister / not like)</span>
             </div>
           </div>
           <div class="ex-row" style="display:flex;align-items:baseline;gap:10px;padding:4px 0;">
             <span class="ex-num">10</span>
             <div style="flex:1;font-size:1rem;line-height:2;">
-              <input class="ans-input inline-ans" data-ans="Do you have to" style="min-width:140px;" placeholder="…"> play your music so loud? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(you / have to)</span>
+              <input class="ans-input inline-ans" data-ans="Do you have to" style="min-width:220px;" placeholder="…"> play your music so loud? <span style="color:#7a4a00;font-style:italic;font-size:.86rem;">(you / have to)</span>
             </div>
           </div>
       </div>
@@ -1489,7 +1524,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-2" onclick="hw1Pick(2,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-2" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-2" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
         <div style="background:#f9f9f9;border:1.5px solid #ddd;border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:5px;" id="hw1-row-3">
           <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -1503,7 +1538,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-3" onclick="hw1Pick(3,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-3" class="hw1-corr ans-input" data-ans="Where do you usually go on vacation" data-wrong="1" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-3" class="hw1-corr ans-input" data-ans="Where do you usually go on vacation" data-wrong="1" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
         <div style="background:#f9f9f9;border:1.5px solid #ddd;border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:5px;" id="hw1-row-4">
           <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -1517,7 +1552,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-4" onclick="hw1Pick(4,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-4" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-4" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
         <div style="background:#f9f9f9;border:1.5px solid #ddd;border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:5px;" id="hw1-row-5">
           <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -1531,7 +1566,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-5" onclick="hw1Pick(5,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-5" class="hw1-corr ans-input" data-ans="What happened at the meeting yesterday" data-wrong="1" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-5" class="hw1-corr ans-input" data-ans="What happened at the meeting yesterday" data-wrong="1" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
       </div>
       <div style="display:flex;flex-direction:column;gap:9px;">
@@ -1547,7 +1582,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-6" onclick="hw1Pick(6,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-6" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-6" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
         <div style="background:#f9f9f9;border:1.5px solid #ddd;border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:5px;" id="hw1-row-7">
           <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -1561,7 +1596,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-7" onclick="hw1Pick(7,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-7" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-7" class="hw1-corr ans-input" data-ans="" data-wrong="0" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
         <div style="background:#f9f9f9;border:1.5px solid #ddd;border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:5px;" id="hw1-row-8">
           <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -1575,7 +1610,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-8" onclick="hw1Pick(8,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-8" class="hw1-corr ans-input" data-ans="Whose jacket did you borrow for the wedding" data-wrong="1" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-8" class="hw1-corr ans-input" data-ans="Whose jacket did you borrow for the wedding" data-wrong="1" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
         <div style="background:#f9f9f9;border:1.5px solid #ddd;border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:5px;" id="hw1-row-9">
           <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -1589,7 +1624,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-9" onclick="hw1Pick(9,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-9" class="hw1-corr ans-input" data-ans="Should we go now" data-wrong="1" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-9" class="hw1-corr ans-input" data-ans="Should we go now" data-wrong="1" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
         <div style="background:#f9f9f9;border:1.5px solid #ddd;border-radius:9px;padding:9px 12px;display:flex;flex-direction:column;gap:5px;" id="hw1-row-10">
           <div style="display:flex;align-items:flex-start;gap:8px;">
@@ -1603,7 +1638,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
               <button class="hw1-btn" id="hw1-W-10" onclick="hw1Pick(10,'W')" style="background:#fdecea;color:#C4614A;border:2px solid #ccc;border-radius:6px;padding:4px 9px;font-size:.88rem;font-weight:700;cursor:pointer;">❌</button>
             </div>
           </div>
-          <input id="hw1i-10" class="hw1-corr ans-input" data-ans="Who are you waiting for" data-wrong="1" style="width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
+          <input id="hw1i-10" class="hw1-corr ans-input" data-ans="Who are you waiting for" data-wrong="1" style="text-align:left;width:100%;padding:4px 10px;font-size:.93rem;" placeholder="correction…">
         </div>
       </div>
     </div>
@@ -1633,26 +1668,26 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
       <div style="margin-bottom:11px;" id="hw2r-2">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">2</span> <em>&#8220;Where is the elevator?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
-          Could you tell me&nbsp;<input id="hw2-2" class="inline-ans ans-input" data-ans="where the elevator is" style="flex:1;min-width:100px;" placeholder="&#8230;">?
+          Could you tell me&nbsp;<input id="hw2-2" class="inline-ans ans-input" data-ans="where the elevator is" style="text-align:left;flex:1;min-width:100px;" placeholder="&#8230;">?
         </div>
       </div>
       <div style="margin-bottom:11px;" id="hw2r-3">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">3</span> <em>&#8220;Where did we park the car?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
-          I can't remember&nbsp;<input id="hw2-3" class="inline-ans ans-input" data-ans="where we parked the car" style="flex:1;min-width:100px;" placeholder="&#8230;">.
+          I can't remember&nbsp;<input id="hw2-3" class="inline-ans ans-input" data-ans="where we parked the car" style="text-align:left;flex:1;min-width:100px;" placeholder="&#8230;">.
         </div>
       </div>
       <div style="margin-bottom:11px;" id="hw2r-4">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">4</span> <em>&#8220;Are there any tickets left for the concert tonight?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;flex-direction:column;gap:4px;">
           <span>Do you know</span>
-          <div style="display:flex;align-items:center;gap:4px;"><input id="hw2-4" class="inline-ans ans-input" data-ans="if there are any tickets left for the concert tonight" data-alt="whether there are any tickets left for the concert tonight" style="flex:1;" placeholder="&#8230;">?</div>
+          <div style="display:flex;align-items:center;gap:4px;"><input id="hw2-4" class="inline-ans ans-input" data-ans="if there are any tickets left for the concert tonight" data-alt="whether there are any tickets left for the concert tonight" style="text-align:left;flex:1;" placeholder="&#8230;">?</div>
         </div>
       </div>
       <div style="margin-bottom:11px;" id="hw2r-5">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">5</span> <em>&#8220;What time does the game start?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
-          Can you tell me&nbsp;<input id="hw2-5" class="inline-ans ans-input" data-ans="what time the game starts" style="flex:1;min-width:100px;" placeholder="&#8230;">?
+          Can you tell me&nbsp;<input id="hw2-5" class="inline-ans ans-input" data-ans="what time the game starts" style="text-align:left;flex:1;min-width:100px;" placeholder="&#8230;">?
         </div>
       </div>
       </div>
@@ -1660,32 +1695,32 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
       <div style="margin-bottom:11px;" id="hw2r-6">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">6</span> <em>&#8220;When's Anna's birthday?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
-          Do you remember&nbsp;<input id="hw2-6" class="inline-ans ans-input" data-ans="when Anna's birthday is" style="flex:1;min-width:100px;" placeholder="&#8230;">?
+          Do you remember&nbsp;<input id="hw2-6" class="inline-ans ans-input" data-ans="when Anna's birthday is" style="text-align:left;flex:1;min-width:100px;" placeholder="&#8230;">?
         </div>
       </div>
       <div style="margin-bottom:11px;" id="hw2r-7">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">7</span> <em>&#8220;What does Jamie do for a living?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
-          Do you have any idea&nbsp;<input id="hw2-7" class="inline-ans ans-input" data-ans="what Jamie does for a living" style="flex:1;min-width:100px;" placeholder="&#8230;">?
+          Do you have any idea&nbsp;<input id="hw2-7" class="inline-ans ans-input" data-ans="what Jamie does for a living" style="text-align:left;flex:1;min-width:100px;" placeholder="&#8230;">?
         </div>
       </div>
       <div style="margin-bottom:11px;" id="hw2r-8">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">8</span> <em>&#8220;Where does Natalie live?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
-          I wonder&nbsp;<input id="hw2-8" class="inline-ans ans-input" data-ans="where Natalie lives" style="flex:1;min-width:100px;" placeholder="&#8230;">.
+          I wonder&nbsp;<input id="hw2-8" class="inline-ans ans-input" data-ans="where Natalie lives" style="text-align:left;flex:1;min-width:100px;" placeholder="&#8230;">.
         </div>
       </div>
       <div style="margin-bottom:11px;" id="hw2r-9">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">9</span> <em>&#8220;What's Ava's boyfriend's name?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;align-items:center;gap:4px;flex-wrap:wrap;">
-          I'm not sure&nbsp;<input id="hw2-9" class="inline-ans ans-input" data-ans="what Ava&#39;s boyfriend&#39;s name is" style="flex:1;min-width:100px;" placeholder="&#8230;">.
+          I'm not sure&nbsp;<input id="hw2-9" class="inline-ans ans-input" data-ans="what Ava&#39;s boyfriend&#39;s name is" style="text-align:left;flex:1;min-width:100px;" placeholder="&#8230;">.
         </div>
       </div>
       <div style="margin-bottom:11px;" id="hw2r-10">
         <div style="font-size:.93rem;color:#555;margin-bottom:3px;"><span class="ex-num">10</span> <em>&#8220;How much did you pay for your new car?&#8221;</em></div>
         <div style="font-size:1rem;color:#1C2B3A;padding-left:1.6em;display:flex;flex-direction:column;gap:4px;">
           <span>Would you mind telling me</span>
-          <div style="display:flex;align-items:center;gap:4px;"><input id="hw2-10" class="inline-ans ans-input" data-ans="how much you paid for your new car" style="flex:1;" placeholder="&#8230;">?</div>
+          <div style="display:flex;align-items:center;gap:4px;"><input id="hw2-10" class="inline-ans ans-input" data-ans="how much you paid for your new car" style="text-align:left;flex:1;" placeholder="&#8230;">?</div>
         </div>
       </div>
       </div>
@@ -1706,7 +1741,7 @@ var chkCorrect={1:false,2:true,3:false,4:true,5:false,6:false,7:true,8:true};
   <div class="banner" style="background:#1C2B3A;color:#fff;">📝 Homework</div>
   <div class="slide-main"><div class="content" style="padding:14px 32px;">
     <h2>HW 3 – Writing Questions</h2>
-    <p class="instruction">Use the word prompts to write the questions. Click each prompt to mark it as used.</p>
+    <p class="instruction">Use the word prompts to write the questions. Remember to adapt the words in the sentences. You can click each prompt to mark it as used.</p>
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
 
@@ -2098,9 +2133,10 @@ function checkS9() {
   document.querySelectorAll('#s9 .sc-sent[data-ans]').forEach(function(sent) {
     tot++;
     var ans = sent.dataset.ans.trim().toLowerCase();
+    var alt = sent.dataset.alt ? sent.dataset.alt.trim().toLowerCase() : null;
     var chips = sent.querySelectorAll('.sc-sent-chip');
     var built = Array.from(chips).map(function(c){ return c.textContent; }).join(' ').trim().toLowerCase();
-    var correct = built === ans;
+    var correct = built === ans || (alt && built === alt);
     sent.style.borderColor = correct ? '#2A6B42' : '#e74c3c';
     sent.style.background = correct ? '#e8f5e9' : '#fff0f0';
     if (correct) ok++;
@@ -2114,6 +2150,16 @@ function checkS9() {
     sc.style.borderRadius = '8px'; sc.style.padding = '5px 12px';
   }
 }
+/* ── s8 INDEPENDENT TOGGLES ── */
+function s8Toggle(id) {
+  var body = document.getElementById('s8-body-' + id);
+  var btn  = document.getElementById('s8-btn-'  + id);
+  if (!body) return;
+  var open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  if (btn) btn.textContent = open ? 'Show ▼' : 'Hide ▲';
+}
+
 function resetS9() {
   document.querySelectorAll('#s9 .sc-sent[data-ans]').forEach(function(sent) {
     var qid = sent.id.replace('sc-sent-', '');
